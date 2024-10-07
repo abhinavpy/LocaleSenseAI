@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const searchPlacesButton = document.getElementById('searchPlacesButton');
   const placesDiv = document.getElementById('places');
 
-  const API_KEY = 'AIzaSyCjpqV727AQifxH6OJu0b9-oPjOQGenafI'; // Replace with your actual API key
+  const API_KEY = ''; // Replace with your actual API key
   let currentLatitude = null;
   let currentLongitude = null;
 
