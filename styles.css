@@ -1,44 +1,135 @@
-/* ... existing styles ... */
+body {
+  font-family: Arial, sans-serif;
+  width: 600px; /* Adjust as needed */
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
 
-#place-type-select {
-    width: calc(100% - 30px);
-    padding: 10px;
-    font-size: 16px;
-    margin-bottom: 10px;
-  }
-  
-  #searchPlacesButton {
-    display: block;
-    width: calc(100% - 30px);
-    margin: 0 auto 15px auto;
-    padding: 10px;
-    font-size: 16px;
-    background-color: #4CAF50;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  #searchPlacesButton:hover {
-    background-color: #45A049;
-  }
+h1 {
+  font-size: 24px;
+  margin: 0;
+  padding: 15px;
+  text-align: center;
+  background-color: #2196F3;
+  color: #fff;
+}
 
-  /* ... existing styles ... */
+#content {
+  padding: 15px;
+}
+
+button {
+  display: block;
+  width: calc(100% - 30px);
+  margin: 15px auto;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #2196F3;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1976D2;
+}
+
+.info-section {
+  margin-bottom: 20px;
+}
+
+#location-info p {
+  margin: 5px 0;
+}
+
+#map img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#findPlacesButton {
+  background-color: #4CAF50;
+}
+
+#findPlacesButton:hover {
+  background-color: #45A049;
+}
 
 /* Styles for the radius slider */
 #radius-section {
-    margin-top: 15px;
-    text-align: left;
-  }
-  
-  #radius-section label {
-    display: block;
-    margin-bottom: 5px;
-    font-size: 16px;
-  }
-  
-  #radius-slider {
+  margin-top: 15px;
+  text-align: left;
+}
+
+#radius-section label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+#radius-slider {
+  width: 100%;
+}
+
+#searchPlacesButton {
+  background-color: #4CAF50;
+}
+
+#searchPlacesButton:hover {
+  background-color: #45A049;
+}
+
+/* Styles for the places list */
+#places ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#places ul li {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  margin-bottom: 5px;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+#places ul li img {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+  border-radius: 4px;
+}
+
+#places ul li div {
+  flex: 1;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+  body {
     width: 100%;
   }
-  
+
+  button {
+    width: calc(100% - 30px);
+  }
+}
+
+#backButton {
+  background-color: #f44336;
+  margin-bottom: 15px;
+}
+
+#backButton:hover {
+  background-color: #d32f2f;
+}
