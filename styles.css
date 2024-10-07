@@ -1,0 +1,44 @@
+/* ... existing styles ... */
+
+#place-type-select {
+    width: calc(100% - 30px);
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  #searchPlacesButton {
+    display: block;
+    width: calc(100% - 30px);
+    margin: 0 auto 15px auto;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #searchPlacesButton:hover {
+    background-color: #45A049;
+  }
+
+  /* ... existing styles ... */
+
+/* Styles for the radius slider */
+#radius-section {
+    margin-top: 15px;
+    text-align: left;
+  }
+  
+  #radius-section label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
+  
+  #radius-slider {
+    width: 100%;
+  }
+  

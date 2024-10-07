@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LocaleSense</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>LocaleSense</h1>
+  <button id="getLocationButton">Get Current Location</button>
+  <div id="content">
+    <!-- Place Type Selection -->
+    <div id="place-type-section" class="info-section" style="display: none;">
+      <strong>Select Place Type:</strong>
+      <select id="place-type-select">
+        <option value="restaurant">Restaurants</option>
+        <option value="tourist_attraction">Tourist Attractions</option>
+        <option value="park">Parks</option>
+        <option value="museum">Museums</option>
+        <option value="cafe">Cafes</option>
+        <option value="bar">Bars</option>
+        <option value="shopping_mall">Shopping Malls</option>
+      </select>
+
+      <!-- Radius Adjustment -->
+      <div id="radius-section">
+        <label for="radius-slider">Search Radius: <span id="radius-value">1500</span> meters</label>
+        <input type="range" id="radius-slider" min="500" max="5000" step="100" value="1500">
+      </div>
+
+      <button id="searchPlacesButton">Search Places</button>
+    </div>
+    <!-- Location and Map -->
+    <div id="location-section" class="info-section">
+      <div id="location-info">
+        <!-- Location coordinates will be displayed here -->
+      </div>
+      <div id="map">
+        <!-- Map will be displayed here -->
+      </div>
+    </div>
+    <!-- Address -->
+    <div id="address" class="info-section">
+      <!-- Address will be displayed here -->
+    </div>
+    <!-- Places -->
+    <div id="places" class="info-section">
+      <!-- Nearby places will be displayed here -->
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
