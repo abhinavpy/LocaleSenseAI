@@ -2,13 +2,20 @@
     "manifest_version": 3,
     "name": "LocaleSense",
     "version": "1.2",
+    "key": "hmpaloclnhodlngfgdinocpkkngadchi",
     "description": "An extension that detects and displays the user's current location, address, and nearby landmarks.",
-    "permissions": ["geolocation", "storage"],
+    "permissions": ["geolocation", "storage", "identity"],
     "host_permissions": [
-      "https://maps.googleapis.com/*"
+      "https://maps.googleapis.com/*",
+      "https://accounts.google.com/*",
+      "https://www.googleapis.com/*"
     ],
+    "oauth2": {
+      "client_id": "CLIENT_ID",
+      "scopes": ["profile", "email"]
+    },
     "action": {
-      "default_popup": "popup.html",
+      "default_popup": "login.html",
       "default_popup_width": 400,  
       "default_popup_height": 600 
     }

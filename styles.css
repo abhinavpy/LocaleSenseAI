@@ -1,10 +1,11 @@
+/* General Styles */
 body {
   font-family: Arial, sans-serif;
-  width: 600px; /* Adjust as needed */
+  width: 600px;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
-  color: #333;
+  background-color: #D5DBE0; /* Soft Gray */
+  color: #000000; /* Black text */
 }
 
 h1 {
@@ -12,55 +13,94 @@ h1 {
   margin: 0;
   padding: 15px;
   text-align: center;
-  background-color: #2196F3;
-  color: #fff;
+  background-color: #75CFE3; /* Sky Blue */
+  color: #ffffff; /* White text */
 }
 
 #content {
   padding: 15px;
 }
 
+/* Buttons */
 button {
   display: block;
   width: calc(100% - 30px);
   margin: 15px auto;
   padding: 10px;
   font-size: 16px;
-  background-color: #2196F3;
-  color: #fff;
+  background-color: #F5C242; /* Warm Yellow */
+  color: #000000; /* Black text */
   border: none;
-  border-radius: 4px;
+  border-radius: 20px; /* Increased for more curvature */
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #1976D2;
+  background-color: #F4A261; /* Pastel Orange */
+  color: #ffffff; /* White text */
 }
 
+/* Specific Buttons */
+#getLocationButton {
+  background-color: #75CFE3; /* Sky Blue */
+  color: #ffffff; /* White text */
+}
+
+#getLocationButton:hover {
+  background-color: #5ABCD8; /* Slightly darker Sky Blue */
+}
+
+#findPlacesButton {
+  background-color: #F5C242; /* Warm Yellow */
+}
+
+#findPlacesButton:hover {
+  background-color: #F4A261; /* Pastel Orange */
+}
+
+#searchPlacesButton {
+  background-color: #F5C242; /* Warm Yellow */
+}
+
+#searchPlacesButton:hover {
+  background-color: #F4A261; /* Pastel Orange */
+}
+
+#logoutButton {
+  background-color: #f44336; /* Red for Sign Out */
+  color: #ffffff; /* White text */
+  border-radius: 20px; /* Curved button */
+}
+
+#logoutButton:hover {
+  background-color: #d32f2f;
+}
+
+/* Info Sections */
 .info-section {
   margin-bottom: 20px;
 }
 
-#location-info p {
+#location-info p,
+#address p {
   margin: 5px 0;
+}
+
+#location-info strong,
+#address strong,
+#places strong {
+  font-size: 18px;
+  color: #000000; /* Black text */
 }
 
 #map img {
   max-width: 100%;
   height: auto;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 10px; /* Slightly more curved */
 }
 
-#findPlacesButton {
-  background-color: #4CAF50;
-}
-
-#findPlacesButton:hover {
-  background-color: #45A049;
-}
-
-/* Styles for the radius slider */
+/* Radius Slider */
 #radius-section {
   margin-top: 15px;
   text-align: left;
@@ -70,51 +110,66 @@ button:hover {
   display: block;
   margin-bottom: 5px;
   font-size: 16px;
+  color: #000000; /* Black text */
 }
 
 #radius-slider {
   width: 100%;
 }
 
-#searchPlacesButton {
-  background-color: #4CAF50;
-}
-
-#searchPlacesButton:hover {
-  background-color: #45A049;
-}
-
-/* Styles for the places list */
+/* Places List */
 #places ul {
   list-style-type: none;
   padding: 0;
 }
 
 #places ul li {
-  display: flex;
-  align-items: center;
-  background-color: #fff;
+  padding: 0;
   margin-bottom: 5px;
-  padding: 10px;
-  border-radius: 4px;
 }
 
-#places ul li img {
+#places ul li a {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff; /* White background */
+  padding: 10px;
+  border-radius: 15px; /* Increased curvature */
+  text-decoration: none;
+  color: #000000; /* Black text */
+  border: 1px solid #ccc;
+}
+
+#places ul li a:hover {
+  background-color: #F4A261; /* Pastel Orange */
+  color: #ffffff; /* White text */
+}
+
+#places ul li a img {
   width: 60px;
   height: 60px;
   margin-right: 10px;
-  border-radius: 4px;
+  border-radius: 10px; /* More rounded images */
 }
 
-#places ul li div {
+#places ul li a div {
   flex: 1;
 }
 
+#places ul li a strong {
+  font-size: 16px;
+}
+
+#places ul li a p {
+  margin: 5px 0;
+}
+
+/* Error Messages */
 .error {
   color: red;
   font-weight: bold;
 }
 
+/* Media Query for Responsiveness */
 @media screen and (max-width: 600px) {
   body {
     width: 100%;
@@ -123,13 +178,4 @@ button:hover {
   button {
     width: calc(100% - 30px);
   }
-}
-
-#backButton {
-  background-color: #f44336;
-  margin-bottom: 15px;
-}
-
-#backButton:hover {
-  background-color: #d32f2f;
 }
